@@ -55,8 +55,8 @@ def get_step_by_time(beijing_time, factor):
     hour = beijing_time.hour
     min_ratio = max(math.ceil((hour / 3) - 1), 0)
     max_ratio = math.ceil(hour / 3)
-    min_step = int(2000 * min_ratio * factor)
-    max_step = int(2000 * max_ratio * factor)
+    min_step = int(2200 * min_ratio * factor)
+    max_step = int(2200 * max_ratio * factor)
     return min_step, max_step
 
 
